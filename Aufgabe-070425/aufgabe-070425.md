@@ -44,7 +44,7 @@
 
 ## Aufgabe 2 SQL Übungen
 
-    1. SELECT * FROM Orders
-    2. SELECT * FROM Orders WHERE customer_id = 4;
+    1. SELECT * FROM Orders;
+    2. SELECT Item FROM Orders WHERE customer_id = 4;
     3. SELECT * FROM Shippings  WHERE status = "Pending";
     4. SELECT first_name, last_name FROM Customers  WHERE country="USA" AND age > 25;
