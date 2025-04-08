@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness API</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="#">Contact</a>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+
+        <h1 class="animated-text">Stay motivated with personalized workouts</h1>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="editForm">
+                    <fieldset>
+                        <legend id="formTitle">Exercise</legend>
+                        <input type="number" id="id" disabled><br><br>
+
+                        <label for="name">Exercise Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="category">Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="Upper body">Upper body</option>
+                            <option value="Legs">Legs</option>
+                            <option value="Full body">Full body</option>
+                            <option value="Core">Core</option>
+                            <option value="Cardio">Cardio</option>
+                        </select><br><br>
+
+                        <label for="duration">Duration (seconds):</label>
+                        <input type="number" id="duration" name="duration" required><br><br>
+
+                        <label for="repetitions">Repetitions:</label>
+                        <input type="number" id="repetitions" name="repetitions" required><br><br>
+
+                        <label for="level">Level:</label>
+                        <select id="level" name="level" required>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select><br><br>
+
+                        <label for="description">Description:</label><br>
+                        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+                        <label for="image">Image URL:</label>
+                        <input type="text" id="image" name="image" required><br><br>
+
+                        <button id="addExercise" type="submit" style="display: none;">Add Exercise</button>
+                        <button id="datelard" type="submit" style="display: none;">Confirm</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div id="idLeft">
+            <button id="startButton">Start Workout</button>
+            <div id="btnExercises">
+                <button id="openModalBtn">Add new Exercise</button>
+
+                <button id="showAll">Show all Exercise</button>
+            </div>
+            <div id="SearchDiv" style="display:none">
+                <input type="text" id="searchName" placeholder="Exercise Name" required><br>
+                <select id="searchCategory" required>
+                    <option value="">All Categories</option>
+                    <option value="Upper body">Upper body</option>
+                    <option value="Legs">Legs</option>
+                    <option value="Full body">Full body</option>
+                    <option value="Core">Core</option>
+                    <option value="Cardio">Cardio</option>
+                </select><br>
+                <select id="searchLevel" required>
+                    <option value="">All Levels</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select><br>
+                <button id="searchBtn">Search Exercises</button>
+            </div> <br><br>
+        </div>
+
+        <div id="idRight">
+            <div id="outputDiv"></div>
+            <div id="timer">
+                <div id="beshreibung">
+                    <p><b>With a clean and easy-to-use interface, you can:</b></p>
+                    <ul>
+                        <li>Start random workouts in just one click</li>
+                        <li>Add, edit, and browse personalized exercises</li>
+                        <li>Track your progress by saving completed workouts</li>
+                        <li>Explore a growing library of exercises for all fitness levels</li>
+                        <li>Whether you’re a beginner or a seasoned athlete, FitnessAPI gives you the tools to train
+                            smart,
+                            stay
+                            consistent, and reach your goals—anytime, anywhere.</li>
+                    </ul>
+                </div>
+                <div id="circleTimer" style="display: none;">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring__circle" stroke="dodgerblue" stroke-width="8" fill="transparent"
+                            r="52" cx="60" cy="60" />
+                    </svg>
+                    <div id="circleText">0</div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        Joshua | Weisong | Senda
+
+    </footer>
+
+</body>
+
+</html>
