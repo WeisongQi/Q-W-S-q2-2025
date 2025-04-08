@@ -79,7 +79,6 @@ Schreibt dann Querys für folgende Fragestellungen:
 
 Wie heißen die Kurse in die **Hans** belegt hat?
 
-
 ~~~SQL
 
 SELECT Kurse.Titel
