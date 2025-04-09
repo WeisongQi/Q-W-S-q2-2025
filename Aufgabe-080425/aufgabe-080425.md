@@ -17,11 +17,11 @@ studenten (student_id, name, hauptfach)
 kurse (kurs_id, titel, dozent)
 
 ~~~SQL
-CREATE TABLE Studenten (Student_id INT PRIMARY KEY,
+CREATE TABLE Studenten (Student_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         Name VARCHAR(50),
                         Hauptfach VARCHAR(50)
                        );
-CREATE TABLE Kurse (Kurs_id INT PRIMARY KEY,
+CREATE TABLE Kurse (Kurs_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         Titel Vatrchar(50),
                     Dozent Vatrchar(50)
                        );
@@ -32,19 +32,19 @@ CREATE TABLE Kurse (Kurs_id INT PRIMARY KEY,
 Legt sechs Studenten und mind. drei Kurse an.
 
 ~~~SQL
-INSERT INTO studenten (Student_id, name, hauptfach)
-VALUES (1, "Müller", "Mathematik"),
-    (2, "Hans","Informatik"),
-    (3, "Zollern","Physik"),
-    (4, "Ford","Maschinenbau"),
-    (5, "Karl","Philosophie"),
-    (6, "Mestermann","Informatik");
+INSERT INTO studenten ( name, hauptfach)
+VALUES ( "Müller", "Mathematik"),
+    ( "Hans","Informatik"),
+    ( "Zollern","Physik"),
+    ( "Ford","Maschinenbau"),
+    ( "Karl","Philosophie"),
+    ("Mestermann","Informatik");
 
 
-INSERT INTO Kurse (Kurs_id, Titel, Dozent)
-VALUES (1, "Logik","Friedrich"),
-        (2, "Analysis","Gauß"),
-        (3, "Lineare Algebra","Schiller");
+INSERT INTO Kurse ( Titel, Dozent)
+VALUES ( "Logik","Friedrich"),
+        ( "Analysis","Gauß"),
+        ( "Lineare Algebra","Schiller");
 
 ~~~
 
