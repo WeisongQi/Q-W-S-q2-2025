@@ -17,7 +17,7 @@ studenten (student_id, name, hauptfach)
 kurse (kurs_id, titel, dozent)
 
 ~~~SQL
-CREATE TABLE Studenten (Student_id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE Studenten (Student_id INT AUTOINCREMENT PRIMARY KEY,
                         Name VARCHAR(50),
                         Hauptfach VARCHAR(50)
                        );
