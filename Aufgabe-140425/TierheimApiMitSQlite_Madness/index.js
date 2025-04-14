@@ -48,7 +48,7 @@ app.get("/tiere", (req, res) => {
 app.post("/tiere", (req, res) => {
     const { tierart, name, krankheit, age, gewicht } = req.body
     db.run(`INSERT INTO tiere (tierart,name,krankheit,age,gewicht) VALUES(?,?,?,?,?)`, [tierart, name, krankheit, age, gewicht])
-    res.status(201).send("Tier wurde erfolgreich hinzugefügt")
+    //res.status(201).send("Tier wurde erfolgreich hinzugefügt")
 })
 
 
