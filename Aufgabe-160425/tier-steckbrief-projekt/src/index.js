@@ -5,14 +5,20 @@ import App from './App';
 import Titel from './Titel';
 import TierCard from './TierCard';
 import reportWebVitals from './reportWebVitals';
+import tiereData from './tiere.json'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Titel />
     <div className="tier-card-container">
-      <TierCard />
-      <TierCard />
+      {tiereData.map((tiere, index) => (
+        <TierCard
+          key={index}
+          tierName={tiere.tierName}
+          tierArt={tiere.tierArt}
+          tierKrankheit={tiere.tierKrankheit} />
+      ))}
     </div>
     <App />
   </React.StrictMode>

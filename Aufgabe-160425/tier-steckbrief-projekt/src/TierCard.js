@@ -1,9 +1,9 @@
 import React from 'react'
 
-function TierCard() {
-    const tierName = "Bello"
-    const tierKrankheit = "Läuse"
-    const tierArt = "Hund"
+function TierCard({ tierName, tierArt, tierKrankheit }) {
+    // let tierName = " "
+    // let tierKrankheit = " "
+    // let tierArt = " "
     return (
         <div>
             <h3>
