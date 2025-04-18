@@ -11,9 +11,7 @@ function GitBefehl({ name, parameter, beschreibung }) {
                 <li>parameter:{parameter}</li>
                 <li>beschreibung:{beschreibung}</li>
             </ul>
-
         </div>
-
     )
 }
 
