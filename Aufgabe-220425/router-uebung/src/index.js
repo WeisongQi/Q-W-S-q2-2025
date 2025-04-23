@@ -8,6 +8,7 @@ import Store from './components/Store';
 import Kontakt from './components/Kontakt';
 import FaQ from './components/FaQ';
 import About from './components/About';
+import Exchange from './components/Exchange';
 
 function Navbar() {
   return (
@@ -19,6 +20,7 @@ function Navbar() {
           <li><Link to="/faq">FAQ</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/store">Store</Link></li>
+          <li><Link to="/exchange">Exchange</Link></li>
         </ul>
       </nav>
       <Routes>
@@ -27,6 +29,7 @@ function Navbar() {
         <Route path="/faq" element={<FaQ></FaQ>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/store" element={<Store></Store>}></Route>
+        <Route path="/exchange" element={<Exchange></Exchange>}></Route>
       </Routes>
     </>
   );
