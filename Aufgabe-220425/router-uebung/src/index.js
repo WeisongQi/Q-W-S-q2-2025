@@ -9,29 +9,30 @@ import Kontakt from './components/Kontakt';
 import FaQ from './components/FaQ';
 import About from './components/About';
 import Exchange from './components/Exchange';
+import Pokemon from "./components/Pokemon";
 
 function Navbar() {
-  return (
-    <>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/faq">FAQ</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/store">Store</Link></li>
-          <li><Link to="/exchange">Exchange</Link></li>
-        </ul>
-      </nav>
-      <Routes>
-        <Route path="/" element={<App></App>}></Route>
-        <Route path="/contact" element={<Kontakt></Kontakt>}></Route>
-        <Route path="/faq" element={<FaQ></FaQ>}></Route>
-        <Route path="/about" element={<About></About>}></Route>
-        <Route path="/store" element={<Store></Store>}></Route>
-        <Route path="/exchange" element={<Exchange></Exchange>}></Route>
-      </Routes>
-    </>
+  return (<>
+    <nav>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/faq">FAQ</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/store">Store</Link></li>
+        <li><Link to="/exchange">Exchange</Link></li>
+        <li><Link to="/pokemon/1">Pokemon</Link></li>
+      </ul>
+    </nav>
+    <Routes>
+      <Route path="/" element={<App></App>}></Route>
+      <Route path="/contact" element={<Kontakt></Kontakt>}></Route>
+      <Route path="/faq" element={<FaQ></FaQ>}></Route>
+      <Route path="/about" element={<About></About>}></Route>
+      <Route path="/store" element={<Store></Store>}></Route>
+      <Route path="/exchange" element={<Exchange></Exchange>}></Route>
+      <Route path="/pokemon/:id" element={<Pokemon></Pokemon>}></Route>
+    </Routes></>
   );
 }
 
