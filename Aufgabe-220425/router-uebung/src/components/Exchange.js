@@ -6,7 +6,7 @@ function Exchange() {
     const baseCurrency = 'USD';
 
     useEffect(() => {
-        fetch(`https://v6.exchangerate-api.com/v6/cb13e121121625a0c80c84d0/latest/${baseCurrency}`)
+        fetch(`https://v6.exchangerate-api.com/v6/*/latest/${baseCurrency}`)
             .then(response => response.json())
             .then(data => {
                 const filteredRates = currencyList.map(currency => ({
