@@ -57,7 +57,7 @@ print(f"Index: {full_path}")
 # 2. 创建 readme.md
 # 2. readme.md im neuen Verzeichnis erstellen
 with open(os.path.join(folder_name, "readme.md"), "w") as f:
-    f.write("# Project Documentation\n")
+    f.write("# Aufgabe Heute\n")
 
 # 3. 用 VS Code 打开文件 (Windows系统)
 # 3. Datei mit VS Code öffnen (nur Windows)
